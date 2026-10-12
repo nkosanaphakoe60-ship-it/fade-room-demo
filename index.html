@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="THE FADE ROOM — fresh fades, clean cuts and sharp style. Contact us to enquire about an appointment.">
+  <title>THE FADE ROOM | Barbershop Demo</title>
+
+  <style>
+    :root {
+      --bg: #10100f;
+      --panel: #191917;
+      --gold: #d6ad68;
+      --cream: #f5f0e7;
+      --muted: #b0aca3;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 20px 7%;
+      border-bottom: 1px solid #34332f;
+    }
+
+    .logo {
+      font-size: 17px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .logo span { color: var(--gold); }
+
+    .nav a:last-child {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 85px 7% 75px;
+      min-height: 440px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background:
+        radial-gradient(ellipse at 80% 20%, #544127 0%, transparent 38%),
+        linear-gradient(135deg, #24231f, #10100f 68%);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 650px;
+      margin: 15px 0;
+      font-size: clamp(42px, 10vw, 76px);
+      line-height: 1.02;
+      letter-spacing: -2px;
+    }
+
+    h1 span { color: var(--gold); }
+
+    .hero p {
+      max-width: 430px;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      width: fit-content;
+      margin-top: 18px;
+      padding: 13px 20px;
+      background: var(--gold);
+      color: #17140f;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    section { padding: 55px 7%; }
+
+    .section-label {
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 8px 0 24px;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .service {
+      padding: 19px 15px;
+      background: var(--panel);
+      border: 1px solid #33322d;
+      border-radius: 7px;
+    }
+
+    .service h3 { margin: 0 0 6px; font-size: 15px; }
+
+    .service p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .price {
+      display: block;
+      margin-top: 13px;
+      color: var(--gold);
+      font-weight: 800;
+    }
+
+    .banner {
+      margin: 0 7%;
+      padding: 30px 22px;
+      background: #28251f;
+      border-left: 3px solid var(--gold);
+      border-radius: 4px;
+    }
+
+    .banner h2 { margin-top: 0; }
+
+    .banner p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
+
+    .contact p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 23px 7%;
+      text-align: center;
+      border-top: 1px solid #34332f;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (min-width: 650px) {
+      .services { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .hero { padding-top: 110px; padding-bottom: 110px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <a class="logo" href="#">THE FADE <span>ROOM.</span></a>
+    <a href="#contact">BOOK AN ENQUIRY ↗</a>
+  </nav>
+
+  <header class="hero">
+    <span class="eyebrow">Your style. Your statement.</span>
+    <h1>STAY FRESH.<br><span>STAY SHARP.</span></h1>
+    <p>
+      Clean cuts. Fresh fades. Attention to every detail.
+      Your next look starts here.
+    </p>
+    <a class="button" href="#services">EXPLORE OUR SERVICES ↘</a>
+  </header>
+
+  <section id="services">
+    <span class="section-label">What we do</span>
+    <h2>The fresh-cut menu.</h2>
+
+    <div class="services">
+      <article class="service">
+        <h3>Classic Cut</h3>
+        <p>A clean, timeless haircut.</p>
+        <span class="price">R120</span>
+      </article>
+
+      <article class="service">
+        <h3>Skin Fade</h3>
+        <p>A sharp, blended finish.</p>
+        <span class="price">R150</span>
+      </article>
+
+      <article class="service">
+        <h3>Beard Trim</h3>
+        <p>Shape it. Line it. Own it.</p>
+        <span class="price">R60</span>
+      </article>
+
+      <article class="service">
+        <h3>Cut + Beard</h3>
+        <p>The complete fresh look.</p>
+        <span class="price">R180</span>
+      </article>
+    </div>
+    <p style="color:#b0aca3;font-size:11px;">
+      Demo prices only. Replace these with the real business's prices.
+    </p>
+  </section>
+
+  <div class="banner">
+    <span class="section-label">The experience</span>
+    <h2>More than just a haircut.</h2>
+    <p>
+      Good energy, attention to detail and a look that gives
+      you confidence. Come through and leave feeling fresh.
+    </p>
+  </div>
+
+  <section class="contact" id="contact">
+    <span class="section-label">Your next cut starts here</span>
+    <h2>Ready for a fresh look?</h2>
+    <p>Send us a WhatsApp message to enquire about an appointment.</p>
+
+    <!-- Replace the sample number with the business's number. -->
+    <a class="button"
+       href="https://wa.me/27712345678?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20haircut."
+       target="_blank"
+       rel="noopener">
+      CHAT ON WHATSAPP ↗
+    </a>
+
+    <p style="font-size:11px;">
+      Demo website — business details are illustrative.
+    </p>
+  </section>
+
+  <footer>
+    THE FADE ROOM — WEBSITE DEMONSTRATION<br>
+    Built as a sample by your future website designer.
+  </footer>
+</body>
+</html>
